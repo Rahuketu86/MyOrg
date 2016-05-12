@@ -1,0 +1,61 @@
+#+TODO: TODO IN-PROGRESS TESTING WAITING DONE
+
+* Task
+** Outline Document
+** TODO Write Introduction
+
+
+   
+
+* Plan for Self Study
+** DONE +Discuss AF Installation+
+   CLOSED: [2016-05-12 to. 19:13]
+** TODO *Install AF Server*
+** TODO Figure out a way to call AF from Python
+** TODO How to set up client side ?
+
+** Purpose : 
+*** Develop a Reservoir Model in IPCOS				       :TEST:
+*** Learn End to End Design
+
+** Success
+*** Mini Nibras 
+*** Hierarchy 
+*** Caching
+*** Configuration
+*** Plotting 
+*** Python Learning
+*** Machine Learning
+
+** Action
+*** Install AF
+*** Learn Thrift
+
+
+* Nature of Planning
+** Purpose
+** Vision
+** Ideas
+** Structure
+** Action 
+
+* Don't keep anything in your head !
+** Project list ( Anything that take more than one week.)
+** Every single next action : Clarify and put in a proper place
+
+* Why?
+  All stuff floods in Pysche, Overwhelming! 
+  Lack of time.
+  Creative Idea 0 time.
+  Inspired.
+  Lack of a bandwith.
+  U need space to be creative.(Psychological)
+* What?
+* How?
+** Capture your ideas.
+*** Then notice what you will notice
+** Make outcome/ make decision.(outcome and actions)
+*** Then notice what you will notice.
+** Use the right maps.
+*** then notice what you will notice.
+** New data / Recalibrate.
