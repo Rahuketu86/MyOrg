@@ -58,4 +58,41 @@
 *** Then notice what you will notice.
 ** Use the right maps.
 *** then notice what you will notice.
-** New data / Recalibrate.
+** New data / Recalibrate.<2016-05-14 lø.>
+
+#+begin_src python
+print "Hello World from Python Babel"
+#+end_src 
+
+#+begin_src python
+def hello():
+    return "Hello World from org and python."
+return hello()
+#+end_src
+
+#+RESULTS:
+: Hello World from org and python.
+
+#+begin_src python :session
+def hello():
+    return "Hello World from org and python in session"
+
+hello()
+#+end_src
+
+#+RESULTS:
+: Hello World from org and python in session
+
+#+begin_src python :session
+import numpy as np
+
+def hello():
+    return np.random.randn(2,4)
+
+hello()
+#+end_src
+
+#+RESULTS:
+| 0.05591948 | 0.62550672 | -0.30406405 | 1.53962265 |
+| 0.32495898 | -0.2568217 | -0.98578186 |  -0.459127 |
+
