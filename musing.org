@@ -1,11 +1,9 @@
-#+TODO: TODO IN-PROGRESS TESTING WAITING DONE
+#+TODO: TODO IN-PROGRESS WAITING DONE
+#+STARTUP: indent
 
 * Task
 ** Outline Document
-** TODO Write Introduction
-
-
-   
+** Write Introduction
 
 * Plan for Self Study
 ** DONE +Discuss AF Installation+
@@ -36,14 +34,13 @@
 ** Purpose
 ** Vision
 ** Ideas
-** Structure
 ** Action 
+** Structure
 
 * Don't keep anything in your head !
 ** Project list ( Anything that take more than one week.)
 ** Every single next action : Clarify and put in a proper place
-
-* Why?
+** Why?
   All stuff floods in Pysche, Overwhelming! 
   Lack of time.
   Creative Idea 0 time.
@@ -59,3 +56,41 @@
 ** Use the right maps.
 *** then notice what you will notice.
 ** New data / Recalibrate.
+
+
+* Table Tutorial
+| This is content of the first cell  |
+| This is the content of second cell |
+| Learning in Python                 |
+
+
+ 
+|      |       |           |        |   |
+|------+-------+-----------+--------+---|
+|      |       |           |        |   |
+| some | comma | seperated | values |   |
+
+
+* Wake up
+
+* Get Ready
+
+** Brush Teeth 
+
+** Take Shower
+
+* Eat 
+  - [X] Milk
+  - [ ] Eggs
+  - [ ] Oats
+
+
+* Go to Work
+
+* Lunch 
+
+* Work More
+
+* Go Home
+
+  
