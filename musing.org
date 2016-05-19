@@ -1,11 +1,8 @@
 #+TODO: TODO IN-PROGRESS TESTING WAITING DONE
-
+##+STARTUP: indent
 * Task
 ** Outline Document
 ** TODO Write Introduction
-
-
-   
 
 * Plan for Self Study
 ** DONE +Discuss AF Installation+
@@ -59,11 +56,16 @@
 ** Use the right maps.
 *** then notice what you will notice.
 ** New data / Recalibrate.<2016-05-14 lø.>
-
+n
 * Python Codeblocks
-#+begin_src python
+#+begin_src python :tangle test_py/org_python_hello.py
+#!/usr/bin/env python
+
 print "Hello World from Python Babel"
 #+end_src 
+
+#+RESULTS:
+: None
 
 #+begin_src python
 def hello():
@@ -96,4 +98,113 @@ hello()
 #+RESULTS:
 | 0.05591948 | 0.62550672 | -0.30406405 | 1.53962265 |
 | 0.32495898 | -0.2568217 | -0.98578186 |  -0.459127 |
+
+#+begin_src python :results file
+
+import matplotlib, numpy
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(4,2))
+x=numpy.linspace(-15,15)
+plt.plot(numpy.sin(x)/x)
+fig.tight_layout()
+plt.savefig('python-matplot-fig.png')
+return 'images/python-matplot-fig.png' # return filename to org-mode
+
+#+END_SRC
+
+* EMACS-LISP CODEBLOCKS
+  
+#+begin_src emacs-lisp
+(+ 2 6)
+#+end_src
+  
+#+RESULTS:
+: 8
+
+* Emacs Lisp Primer
+#+begin_src emacs-lisp
+  (setq foo "o")
+  (+ 2 2)
+  (+ 2 (+ 1 321))
+  (setq my-name "Bastein")
+  (insert "Hello")
+  (insert "Hello" " World!")
+  (insert "Hello to you! ::" my-name)
+  (defun hello() (insert "Hello funky : " my-name))
+  (hello)
+  (defun hello (name) (insert "Hello Pfunky :" name))
+  (hello my-name)
+  (switch-to-buffer-other-window "*test*")
+  (progn
+      (switch-to-buffer-other-window "*elisp-test*")
+      (erase-buffer)
+      (hello "Rahul")
+      (other-window 1))
+
+  (let ((local-name "Rajda"))
+       (switch-to-buffer-other-window "*elisp-test*")
+       (erase-buffer)
+       (hello local-name)
+       (other-window 1))
+  (hello (format "Hello %s!\n" "RrRR"))
+  (defun hello (name)
+         (insert (format "Hello %s\n" name)))
+  (hello "Rahul")
+  n
+  (defun greeting (name) 
+      (let ((my-name (read-from-minibuffer "Enter-your name:")))
+      (insert (format "Hello %s! My name is %s\n" 
+                       my-name
+                       name ))))
+  (read-from-minibuffer "Enter your name :")
+  (greeting "Rahul")
+
+  (defun greeting (from-name)
+         (let ((your-name "Rahul"))
+              (switch-to-buffer-other-window "*greet*")
+              (erase-buffer)
+              (insert (format "Hello %s! My name :: %s\n"
+                       your-name
+                       from-name))
+              (other-window 1)))
+  (greeting "Rambo")
+
+  (defun hello(name)
+    (insert (format "Hello %s\n" name)))
+
+  (setq list-of-names '("Rahul" "Bulbul" "Sandhya" "Vinod") )
+  (car list-of-names)
+  (cdr list-of-names)
+  (push "Utpal" list-of-names)
+  (defun greeting ()
+         (let ((your-name "Rambo"))
+              (switch-to-buffer-other-window "*greet")
+              (erase-buffer)
+              (mapcar 'hello list-of-names)
+              (other-window 1)))
+  (greeting)
+
+  (defun replace-hello-by-bonjour()
+    (progn
+      (switch-to-buffer-other-window "*greet")
+      (goto-char (point-min))))
+
+
+
+  (replace-hello-by-bonjour)
+  (print foo)
+#+end_src
+
+#+RESULTS:
+: o
+
+   
+* Shell Script Code Block
+#+begin_src sh : session
+echo "Hello World from org shell"
+#+end_src
+
+#+RESULTS:
+: Hello World from org shell
 
