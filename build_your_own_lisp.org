@@ -3,7 +3,7 @@
 #+EMAIL:  rahuketu86@gmail.com
 #+TODO:   TODO IN-PROGRESS WAITING DEFFERED DONE
 
-* INTRODUCTION
+* Introduction
   This is an exercise in learning multiple things. The objective is manifold :-
   - Learning Org Mode
   - Principles of Literate Programming
@@ -18,13 +18,13 @@
 
   So Stage has been set. Lets' get the ball rolling ...
 
-* SETUP
+* Setup
   I will be following the wonderful tutorial at [[http://www.buildyourownlisp.com][buildyourownlisp.com]] . The basic idea would be to 
   write some code following the tutorial in literate mode and add some accompanying notes :-
   - Learnings :: Things that I have learned.
   - Questions :: Any questions I have.
   - Ideas  :: Some Ideas and thoughts for the future. 
-
+	    
 * Code
   The idea is to develop a lisp system which can run in both linux and windows. I will be developing this
   on Ubuntu Machine. So my toolset is going to be :-
@@ -69,3 +69,32 @@
     - Valgrind
   - Editor
     - Emacs Ofcourse! (Might spend some time in setting up configuration for C development)
+
+
+** 01.Baby First Steps
+
+   The ubiquituos Hello World
+   #+begin_src C :tangle byol/hello_world.c :results verbatim :exports both
+     #include <stdio.h>
+
+     int main(int argc, char** argv){
+       puts("Hello, World from Org and C!");
+       return 0;
+     }
+   #+end_src 
+
+   #+RESULTS:
+   : Hello, World from Org and C!
+
+*** Learnings
+    - It seems like org mode is already hooked to gcc so no need to setup a seperate compiler for now.
+    - Always set :results verbatim.
+*** Questions
+    - There is no executable. Where is the path for tmp executable?
+    - What will happen when you have a prompt like infinite loop?
+    - Which compiler is being used?
+*** Ideas
+    - Write a lisp function to use llvm instead of gcc(or vice versa)
+    - Function should also provide information about size of executable.
+    - Learn some gdb and lldb. Can't think of a way to do it in Org mode
+      as of now?
