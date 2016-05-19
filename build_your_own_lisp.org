@@ -1,7 +1,7 @@
-#+TITLE: Build Your Own Lisp Tutorial
+#+TITLE:  Build Your Own Lisp Tutorial
 #+AUTHOR: RAHUL SARAF
-#+EMAIL: rahuketu86@gmail.com
-#+TODO: TODO IN-PROGRESS WAITING DEFFERED DONE
+#+EMAIL:  rahuketu86@gmail.com
+#+TODO:   TODO IN-PROGRESS WAITING DEFFERED DONE
 
 * INTRODUCTION
   This is an exercise in learning multiple things. The objective is manifold :-
@@ -24,3 +24,48 @@
   - Learnings :: Things that I have learned.
   - Questions :: Any questions I have.
   - Ideas  :: Some Ideas and thoughts for the future. 
+
+* Code
+  The idea is to develop a lisp system which can run in both linux and windows. I will be developing this
+  on Ubuntu Machine. So my toolset is going to be :-
+  - Compiler
+    - Clang and/or gcc for linux
+
+      #+begin_src sh :results verbatim
+        gcc --version
+      #+end_src
+
+      #+RESULTS:
+      : gcc (Ubuntu 5.3.1-14ubuntu2) 5.3.1 20160413
+      : Copyright (C) 2015 Free Software Foundation, Inc.
+      : This is free software; see the source for copying conditions.  There is NO
+      : warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      : 
+
+      #+begin_src sh :results verbatim
+        clang --version
+      #+end_src
+
+      #+RESULTS:
+      : clang version 3.3 (tags/RELEASE_33/final)
+      : Target: i386-pc-linux-gnu
+      : Thread model: posix
+
+    - mingw-gcc and wine for windows
+      
+      #+begin_src sh :results verbatim
+        i686-w64-mingw32-gcc --version
+      #+end_src
+
+      #+RESULTS:
+      : i686-w64-mingw32-gcc (GCC) 5.3.1 20160211
+      : Copyright (C) 2015 Free Software Foundation, Inc.
+      : This is free software; see the source for copying conditions.  There is NO
+      : warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      : 
+
+  - Debugger
+    - LLDB/ GDB (Need to figure out setup for emacs)
+    - Valgrind
+  - Editor
+    - Emacs Ofcourse! (Might spend some time in setting up configuration for C development)
