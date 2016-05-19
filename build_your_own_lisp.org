@@ -1,0 +1,19 @@
+#+TITLE: Build Your Own Lisp Tutorial
+#+AUTHOR: RAHUL SARAF
+#+EMAIL: rahuketu86@gmail.com
+#+TODO: TODO IN-PROGRESS WAITING DEFFERED DONE
+
+* INTRODUCTION
+  This is an exercise in learning multiple things. The objective is manifold :-
+  - Learning Org Mode
+  - Principles of Literate Programming
+  - Learning C
+  - Learning a way to implement a new language
+  - Learning Lisp
+  - And in doing all this - Learning Emacs :)
+  
+  Long term Goal include:-
+  - Learning a method to implement extensible software and organization of software project
+  - May be someday an editor like Emacs in Rust/Haskell
+
+  So Stage has been set. Lets' get the ball rolling ...
