@@ -17,3 +17,10 @@
   - May be someday an editor like Emacs in Rust/Haskell
 
   So Stage has been set. Lets' get the ball rolling ...
+
+* SETUP
+  I will be following the wonderful tutorial at [[http://www.buildyourownlisp.com][buildyourownlisp.com]] . The basic idea would be to 
+  write some code following the tutorial in literate mode and add some accompanying notes :-
+  - Learnings :: Things that I have learned.
+  - Questions :: Any questions I have.
+  - Ideas  :: Some Ideas and thoughts for the future. 
