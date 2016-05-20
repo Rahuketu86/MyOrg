@@ -2,8 +2,7 @@
 #+AUTHOR: RAHUL SARAF
 #+EMAIL:  rahuketu86@gmail.com
 #+TODO:   TODO IN-PROGRESS WAITING DEFFERED DONE
-#+OPTIONS: H:3
-#+OPTIONS: num:nil
+#+OPTIONS: H:3 num:2
 #+OPTIONS: toc:2
 #+OPTIONS: p:t
 
@@ -94,10 +93,15 @@
 *** Learnings
     - It seems like org mode is already hooked to gcc so no need to setup a seperate compiler for now.
     - Always set :results verbatim.
+    - Github org-mode support is preety basic and doesn't support TOC, Section numbering
+    - /#+OPTIONS/ flag for supporting various export settings
 *** Questions
     - There is no executable. Where is the path for tmp executable?
     - What will happen when you have a prompt like infinite loop?
     - Which compiler is being used?
+    - How can I add a cell number to source blocks? Something like In[num], Out[num]
+    - Some custom formatting for Result and src block for different languages during export?
+    - How can I setup flag / org-mode setting to evaluate all source blocks during export to html?
 *** Ideas
     - Write a lisp function to use llvm instead of gcc(or vice versa)
     - Function should also provide information about size of executable.
