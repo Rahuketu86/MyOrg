@@ -30,7 +30,7 @@
 	    
 * Code
   The idea is to develop a lisp system which can run in both linux and windows. I will be developing this
-  on Ubuntu Machine. So my toolset is going to be :-
+  on Ubuntu Machine. So my tool-set is going to be :-
   - Compiler
     - Clang and/or gcc for linux
 
@@ -72,12 +72,12 @@
     - LLDB/ GDB (Need to figure out setup for emacs)
     - Valgrind
   - Editor
-    - Emacs Ofcourse! (Might spend some time in setting up configuration for C development)
+    - Emacs Of-course! (Might spend some time in setting up configuration for C development)
 
 
 ** Baby First Steps
 
-   The ubiquituos Hello World
+   The ubiquitous Hello World
    #+begin_src C :tangle byol/hello_world.c :results verbatim :exports both
      #include <stdio.h>
 
@@ -91,9 +91,9 @@
    : Hello, World from Org and C!
 
 *** Learnings
-    - It seems like org mode is already hooked to gcc so no need to setup a seperate compiler for now.
+    - It seems like org mode is already hooked to gcc so no need to setup a separate compiler for now.
     - Always set :results verbatim.
-    - Github org-mode support is preety basic and doesn't support TOC, Section numbering
+    - Github org-mode support is pretty basic and doesn't support TOC, Section numbering
     - /#+OPTIONS/ flag for supporting various export settings
 *** Questions
     - There is no executable. Where is the path for tmp executable?
