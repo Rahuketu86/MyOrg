@@ -2,6 +2,10 @@
 #+AUTHOR: RAHUL SARAF
 #+EMAIL:  rahuketu86@gmail.com
 #+TODO:   TODO IN-PROGRESS WAITING DEFFERED DONE
+#+OPTIONS: H:3
+#+OPTIONS: num:nil
+#+OPTIONS: toc:2
+#+OPTIONS: p:t
 
 * Introduction
   This is an exercise in learning multiple things. The objective is manifold :-
@@ -31,7 +35,7 @@
   - Compiler
     - Clang and/or gcc for linux
 
-      #+begin_src sh :results verbatim :exports both -n
+      #+begin_src sh :results verbatim :exports both
         gcc --version
       #+end_src
 
@@ -42,10 +46,10 @@
       : warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
       : 
 
-      #+begin_src sh :results verbatim :exports both -n
+      #+begin_src sh :results verbatim :exports both
         clang --version
-      #+end_src
 
+      #+end_src
 
       #+RESULTS:
       : clang version 3.3 (tags/RELEASE_33/final)
@@ -54,7 +58,7 @@
 
     - mingw-gcc and wine for windows
       
-      #+begin_src sh n:results verbatim :exports both -n
+      #+begin_src sh :results verbatim :exports both
         i686-w64-mingw32-gcc --version
       #+end_src
 
@@ -75,17 +79,17 @@
 ** Baby First Steps
 
    The ubiquituos Hello World
-   #+begin_src C :tangle byol/hello_world.c :results verbatim :exports both -n
+   #+begin_src C :tangle byol/hello_world.c :results verbatim :exports both
      #include <stdio.h>
 
      int main(int argc, char** argv){
-       puts("Hello, World from Org and C language!");
+       puts("Hello, World from Org and C!");
        return 0;
      }
    #+end_src 
 
    #+RESULTS:
-   : Hello, World from Org and C language!
+   : Hello, World from Org and C!
 
 *** Learnings
     - It seems like org mode is already hooked to gcc so no need to setup a seperate compiler for now.
